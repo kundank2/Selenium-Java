@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+<parameter name="URL" value="google.com"></parameter>
+	<test name="Personal Loan">
+	<parameter name="URL" value="www.google.com"></parameter>
+	<groups>
+	<run>
+	<exclude name="Smoke"></exclude>
+	</run>
+	</groups>
+		<classes>
+
+			<class name="TestNGTutorials.day1"/>
+			
+			<class name="TestNGTutorials.day2" />
+			<class name="TestNGTutorials.day4" />
+			<class name="TestNGTutorials.day3"/>
+			
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
