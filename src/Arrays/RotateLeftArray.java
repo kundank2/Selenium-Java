@@ -1,0 +1,25 @@
+package Arrays;
+
+public class RotateLeftArray {
+
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,4,5,6,7};
+		int n = 3;
+		//Rotate the given array by n times toward left
+		for(int i=0;i<n;i++) {
+			int j, first;
+			  //Stores the first element of the array
+			first = arr[0];
+			for(j = 0; j < arr.length-1; j++) {
+				//Shift element of array by one  
+				arr[j] = arr[j+1];
+			}
+			 //First element of array will be added to the end  
+			arr[j] = first;
+		}
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+
+}
